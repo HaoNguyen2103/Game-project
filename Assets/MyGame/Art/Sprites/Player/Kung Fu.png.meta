@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: 2ba1b0cc30e632a4285c212cc032cb96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4858999018281694545
+    second: Kung Fu_0
+  - first:
+      213: 2478996097391814616
+    second: Kung Fu_1
+  - first:
+      213: -546999685012668560
+    second: Kung Fu_2
+  - first:
+      213: 758416912208812047
+    second: Kung Fu_3
+  - first:
+      213: -2901205284497095686
+    second: Kung Fu_4
+  - first:
+      213: -4429166154922895636
+    second: Kung Fu_5
+  - first:
+      213: -6784092678833638151
+    second: Kung Fu_6
+  - first:
+      213: 7302752179492338934
+    second: Kung Fu_7
+  - first:
+      213: 5571516812730790427
+    second: Kung Fu_8
+  - first:
+      213: -4642010580315679426
+    second: Kung Fu_9
+  - first:
+      213: -3765579457224463564
+    second: Kung Fu_10
+  - first:
+      213: -6226281911445858660
+    second: Kung Fu_11
+  - first:
+      213: -8692283369915907536
+    second: Kung Fu_12
+  - first:
+      213: 2319091437100175472
+    second: Kung Fu_13
+  - first:
+      213: -4582519413796087702
+    second: Kung Fu_14
+  - first:
+      213: -7491823727365888772
+    second: Kung Fu_15
+  - first:
+      213: -3942182330798071884
+    second: Kung Fu_16
+  - first:
+      213: -4522085280640349562
+    second: Kung Fu_17
+  - first:
+      213: -7156645626216437026
+    second: Kung Fu_18
+  - first:
+      213: 2296155026315061058
+    second: Kung Fu_19
+  - first:
+      213: 3615405758388337967
+    second: Kung Fu_20
+  - first:
+      213: -4239777358179889699
+    second: Kung Fu_21
+  - first:
+      213: -2171634136663871946
+    second: Kung Fu_22
+  - first:
+      213: 3000851389464384954
+    second: Kung Fu_23
+  - first:
+      213: 5814310494237016396
+    second: Kung Fu_24
+  - first:
+      213: 5357860079111229839
+    second: Kung Fu_25
+  - first:
+      213: 5650481044095767985
+    second: Kung Fu_26
+  - first:
+      213: -8508224402943649952
+    second: Kung Fu_27
+  - first:
+      213: -7728350354236426028
+    second: Kung Fu_28
+  - first:
+      213: 842819325346609279
+    second: Kung Fu_29
+  - first:
+      213: 3172367233298574552
+    second: Kung Fu_30
+  - first:
+      213: -7153767203471390892
+    second: Kung Fu_31
+  - first:
+      213: 4657399475647687553
+    second: Kung Fu_32
+  - first:
+      213: -7447367422417347553
+    second: Kung Fu_33
+  - first:
+      213: 7949463849006715035
+    second: Kung Fu_34
+  - first:
+      213: -8890077218568444965
+    second: Kung Fu_35
+  - first:
+      213: 7108072570565289731
+    second: Kung Fu_36
+  - first:
+      213: 5332722329859438823
+    second: Kung Fu_37
+  - first:
+      213: -3325123688196131054
+    second: Kung Fu_38
+  - first:
+      213: 6834727243796814619
+    second: Kung Fu_39
+  - first:
+      213: 1751275604138868186
+    second: Kung Fu_40
+  - first:
+      213: -7583521642244419897
+    second: Kung Fu_41
+  - first:
+      213: -6442750294051103685
+    second: Kung Fu_42
+  - first:
+      213: -7852601415008607948
+    second: Kung Fu_43
+  - first:
+      213: -5548060000327700143
+    second: Kung Fu_44
+  - first:
+      213: 6521195266998345344
+    second: Kung Fu_45
+  - first:
+      213: 7703336180952532032
+    second: Kung Fu_46
+  - first:
+      213: -9136243941379697594
+    second: Kung Fu_47
+  - first:
+      213: 5231304032012278803
+    second: Kung Fu_48
+  - first:
+      213: -7470439937188246061
+    second: Kung Fu_49
+  - first:
+      213: 4282468959516113237
+    second: Kung Fu_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kung Fu_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 173
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155f6a0fcd1ae6340800000000000000
+      internalID: 4858999018281694545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 173
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d76e98f0d9276220800000000000000
+      internalID: 2478996097391814616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 173
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fb1924faaa868f0800000000000000
+      internalID: -546999685012668560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 173
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08dad3d920768a00800000000000000
+      internalID: 758416912208812047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 173
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3801d3a29dcb7d0800000000000000
+      internalID: -2901205284497095686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 173
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce653ac49d07882c0800000000000000
+      internalID: -4429166154922895636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 173
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4facaf6af0ad1a0800000000000000
+      internalID: -6784092678833638151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 174
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcb9556a66985560800000000000000
+      internalID: 7302752179492338934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_8
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 174
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b127fe2a501025d40800000000000000
+      internalID: 5571516812730790427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 174
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35ddacb8f3449fb0800000000000000
+      internalID: -4642010580315679426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 174
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ba0ae3f69fdbbc0800000000000000
+      internalID: -3765579457224463564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 174
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9654dcf69dc799a0800000000000000
+      internalID: -6226281911445858660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_12
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 174
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0328029245ece5780800000000000000
+      internalID: -8692283369915907536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 174
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070910eff511f2020800000000000000
+      internalID: 2319091437100175472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_14
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 172
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a685a545fde9760c0800000000000000
+      internalID: -4582519413796087702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_15
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 172
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4638a6302b70890800000000000000
+      internalID: -7491823727365888772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_16
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 172
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf95f48e0e8a49c0800000000000000
+      internalID: -3942182330798071884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 110
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ac86375635e31c0800000000000000
+      internalID: -4522085280640349562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 110
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda240278bc7eac90800000000000000
+      internalID: -7156645626216437026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_19
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 110
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247acb4b4d49ddf10800000000000000
+      internalID: 2296155026315061058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_20
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 110
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d73abc1608c2230800000000000000
+      internalID: 3615405758388337967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 110
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd81feb4f84925c0800000000000000
+      internalID: -4239777358179889699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 110
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ea90e224eccd1e0800000000000000
+      internalID: -2171634136663871946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_23
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 110
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab513c4807a25a920800000000000000
+      internalID: 3000851389464384954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 123
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41c2d6c69490b050800000000000000
+      internalID: 5814310494237016396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_25
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 110
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81dba3da51fa5a40800000000000000
+      internalID: 5357860079111229839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_26
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 110
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b51863729a8a6e40800000000000000
+      internalID: 5650481044095767985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_27
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 138
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067db39ebf6bce980800000000000000
+      internalID: -8508224402943649952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_28
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 110
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d839f3ac426fb490800000000000000
+      internalID: -7728350354236426028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_29
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 110
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f787e1106bb42bb00800000000000000
+      internalID: 842819325346609279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_30
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 110
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dca9d5d033860c20800000000000000
+      internalID: 3172367233298574552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_31
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 110
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4578f3771a6b8bc90800000000000000
+      internalID: -7153767203471390892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_32
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 110
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b221ba52862a040800000000000000
+      internalID: 4657399475647687553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_33
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 110
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c5ff289c2a5a890800000000000000
+      internalID: -7447367422417347553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_34
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 58
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90dadaa04b225e60800000000000000
+      internalID: 7949463849006715035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd36f611fd910a480800000000000000
+      internalID: -8890077218568444965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 58
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307ed3eb752f4a260800000000000000
+      internalID: 7108072570565289731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_37
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 58
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8b01d74b2a10a40800000000000000
+      internalID: 5332722329859438823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_38
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 58
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21735d27f99cad1d0800000000000000
+      internalID: -3325123688196131054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_39
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 58
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b913f5734d9de50800000000000000
+      internalID: 6834727243796814619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_40
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 58
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add318022e7cd4810800000000000000
+      internalID: 1751275604138868186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_41
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 58
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cec88fde3be1c690800000000000000
+      internalID: -7583521642244419897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_42
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 58
+        width: 49
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c5a822eb0c696a0800000000000000
+      internalID: -6442750294051103685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_43
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 58
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431aeaf2e94f50390800000000000000
+      internalID: -7852601415008607948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_44
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 58
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151f9e713d45103b0800000000000000
+      internalID: -5548060000327700143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_45
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 58
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e15686b80ff7a50800000000000000
+      internalID: 6521195266998345344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_46
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 58
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044071b417fb7ea60800000000000000
+      internalID: 7703336180952532032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_47
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 58
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6449fbc8a8a853180800000000000000
+      internalID: -9136243941379697594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_48
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 58
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c192cec43599840800000000000000
+      internalID: 5231304032012278803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_49
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 56
+        width: 53
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddc00c057aa35890800000000000000
+      internalID: -7470439937188246061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kung Fu_50
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 14
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559389544d26e6b30800000000000000
+      internalID: 4282468959516113237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kung Fu_0: 4858999018281694545
+      Kung Fu_1: 2478996097391814616
+      Kung Fu_10: -3765579457224463564
+      Kung Fu_11: -6226281911445858660
+      Kung Fu_12: -8692283369915907536
+      Kung Fu_13: 2319091437100175472
+      Kung Fu_14: -4582519413796087702
+      Kung Fu_15: -7491823727365888772
+      Kung Fu_16: -3942182330798071884
+      Kung Fu_17: -4522085280640349562
+      Kung Fu_18: -7156645626216437026
+      Kung Fu_19: 2296155026315061058
+      Kung Fu_2: -546999685012668560
+      Kung Fu_20: 3615405758388337967
+      Kung Fu_21: -4239777358179889699
+      Kung Fu_22: -2171634136663871946
+      Kung Fu_23: 3000851389464384954
+      Kung Fu_24: 5814310494237016396
+      Kung Fu_25: 5357860079111229839
+      Kung Fu_26: 5650481044095767985
+      Kung Fu_27: -8508224402943649952
+      Kung Fu_28: -7728350354236426028
+      Kung Fu_29: 842819325346609279
+      Kung Fu_3: 758416912208812047
+      Kung Fu_30: 3172367233298574552
+      Kung Fu_31: -7153767203471390892
+      Kung Fu_32: 4657399475647687553
+      Kung Fu_33: -7447367422417347553
+      Kung Fu_34: 7949463849006715035
+      Kung Fu_35: -8890077218568444965
+      Kung Fu_36: 7108072570565289731
+      Kung Fu_37: 5332722329859438823
+      Kung Fu_38: -3325123688196131054
+      Kung Fu_39: 6834727243796814619
+      Kung Fu_4: -2901205284497095686
+      Kung Fu_40: 1751275604138868186
+      Kung Fu_41: -7583521642244419897
+      Kung Fu_42: -6442750294051103685
+      Kung Fu_43: -7852601415008607948
+      Kung Fu_44: -5548060000327700143
+      Kung Fu_45: 6521195266998345344
+      Kung Fu_46: 7703336180952532032
+      Kung Fu_47: -9136243941379697594
+      Kung Fu_48: 5231304032012278803
+      Kung Fu_49: -7470439937188246061
+      Kung Fu_5: -4429166154922895636
+      Kung Fu_50: 4282468959516113237
+      Kung Fu_6: -6784092678833638151
+      Kung Fu_7: 7302752179492338934
+      Kung Fu_8: 5571516812730790427
+      Kung Fu_9: -4642010580315679426
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
