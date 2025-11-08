@@ -46,9 +46,18 @@ public class Player : MonoBehaviour, IcanTakeDamage
         playerController.enabled = false;
         playerAttack.enabled = false;
         playerFire.enabled = false;
+        AudioManager.Instance.PlayPlayerDeath();
     }
     public bool GetIsDead()
     {
         return isDead;
+    }
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+    public int GetMaxHealth()
+    {
+        return Maxhealth;
     }
 }

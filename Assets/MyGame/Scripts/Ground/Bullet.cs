@@ -16,19 +16,16 @@ public class Bullet : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             IcanTakeDamage damage = collision.GetComponent<IcanTakeDamage>();
-            Instantiate(fxPrefab, transform.position, Quaternion.identity);
-            AudioManager.Instance.PlayEnemysfxmusic(shootClip);
+            
             if (damage != null)
             {
                 damage.TakeDamage(damavalue, Vector2.zero, gameObject);
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
+            Instantiate(fxPrefab, transform.position, Quaternion.identity);
+            AudioManager.Instance.PlayEnemysfxmusic(shootClip);
+            
         }
-
-    }
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }
