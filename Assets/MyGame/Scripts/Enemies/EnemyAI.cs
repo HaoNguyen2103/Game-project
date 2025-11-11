@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
     private Animator anim;
     private int isIdleId;
     private int isWalkId;
-    private bool isWaiting = false; 
+    private bool isWaiting = false;
     public bool isAttacking = false;
     private bool isWalking = false;
     private Enemy enemyScript;
@@ -71,25 +71,25 @@ public class EnemyAI : MonoBehaviour
         Flip();
         target = (target == PointA) ? PointB : PointA;
         Vector3 scale = transform.localScale;
-        
 
-        
+
+
         StartWalking();
         isWaiting = false;
     }
     public void TurnTowards(Vector3 newDirection)
     {
-        
+
         rb.linearVelocity = Vector2.zero;
 
-        
+
         if ((newDirection.x > 0 && transform.localScale.x < 0) ||
             (newDirection.x < 0 && transform.localScale.x > 0))
         {
             Flip();
         }
 
-        
+
         Vector2 patrolDirection = (target.position - transform.position).normalized;
         if (isWalking)
             rb.linearVelocity = patrolDirection * speed;
@@ -98,7 +98,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (!isWalking)
         {
-            anim.ResetTrigger(isIdleId); 
+            anim.ResetTrigger(isIdleId);
             anim.SetTrigger(isWalkId);
             isWalking = true;
         }
@@ -108,10 +108,10 @@ public class EnemyAI : MonoBehaviour
     {
         if (isWalking)
         {
-            anim.ResetTrigger(isWalkId); 
+            anim.ResetTrigger(isWalkId);
             anim.SetTrigger(isIdleId);
-        rb.linearVelocity = Vector2.zero;
-        isWalking = false;
+            rb.linearVelocity = Vector2.zero;
+            isWalking = false;
         }
     }
     private void Flip()

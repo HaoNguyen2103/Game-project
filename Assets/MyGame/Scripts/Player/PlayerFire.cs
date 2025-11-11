@@ -8,6 +8,7 @@ public class PlayerFire : MonoBehaviour
     public float bulletSpeed = 20f;
     private PlayerController playerController;
     private float timeDestroy = 2f;
+    public AudioClip shootClip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerFire : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             Shoot();
+            AudioManager.Instance.PlayEnemysfxmusic(shootClip);
         }
     }
     private void Shoot()

@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
         {
             healthBar.value = currentHealth;
         }
-       
+
     }
     private void Die()
     {
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
         //Animator anim = GetComponentInChildren<Animator>();
         //if (anim != null)
         //{
-            anim.SetTrigger("isDead");
+        anim.SetTrigger("isDead");
         //}
         // EnemyAI enemyAI = GetComponent<EnemyAI>();
         Collider2D col = GetComponent<Collider2D>();
@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(isDead) return;
+        if (isDead) return;
         if (Time.time < nexAttackTime) return;
         Player player = collision.GetComponent<Player>();
         if (player != null && !player.GetIsDead())

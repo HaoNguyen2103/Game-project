@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
     public GameObject fxPrefab;
     private float destroyTime = 3f;
     public int damavalue = 10;
-    public AudioClip shootClip;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,15 +16,15 @@ public class Bullet : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             IcanTakeDamage damage = collision.GetComponent<IcanTakeDamage>();
-            
+
             if (damage != null)
             {
                 damage.TakeDamage(damavalue, Vector2.zero, gameObject);
                 Destroy(gameObject);
             }
             Instantiate(fxPrefab, transform.position, Quaternion.identity);
-            AudioManager.Instance.PlayEnemysfxmusic(shootClip);
             
+
         }
 
     }
