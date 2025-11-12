@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 using UnityEngine.UI;
 public class Enemy : MonoBehaviour, IcanTakeDamage
 {
     [Header("Enemy Settings")]
     public float maxHealth = 100f;
-    public Slider healthBar;
+    public EnemyHealthHUD hudPrefab;
     public float currentHealth;
     private bool isDead = false;
     private Rigidbody2D rb;
@@ -14,54 +15,75 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
     public int damagePlayer = 5;
     private EnemyAI enemyAI;
     private Animator anim;
+    public Sprite enemyIcon;
+    private EnemyHealthHUD hudInstance;
+    private static EnemyHealthHUD currentActiveHUD;
     public void TakeDamage(int dameAmount, Vector2 hitPoint, GameObject hitDirection)
     {
         if (isDead) return;
         currentHealth -= dameAmount;
+        currentHealth = Mathf.Max(currentHealth, 0);
+
+        if (hudInstance != null)
+        {
+            if (currentActiveHUD != null && currentActiveHUD != hudInstance)
+            {
+                currentActiveHUD.HideImmediate();
+            }
+
+
+            hudInstance.SetEnemyIcon(enemyIcon);
+            hudInstance.UpdateHealth(currentHealth, maxHealth);
+            
+            currentActiveHUD = hudInstance;
+
+        }
+
         if (currentHealth <= 0)
-        {
-            currentHealth = 0;
             Die();
-        }
-        if (healthBar != null)
-        {
-            healthBar.value = currentHealth;
-        }
 
     }
     private void Die()
     {
         if (isDead) return;
         isDead = true;
-        //Animator anim = GetComponentInChildren<Animator>();
-        //if (anim != null)
-        //{
+        
+        
         anim.SetTrigger("isDead");
-        //}
-        // EnemyAI enemyAI = GetComponent<EnemyAI>();
+       
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
         if (enemyAI != null)
         {
             enemyAI.enabled = false;
         }
+        if (hudInstance != null)
+            Destroy(hudInstance.gameObject, 0.1f);
+
         Destroy(gameObject, 2f);
+        
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHealth = maxHealth;
-        if (healthBar != null)
-        {
-            healthBar.maxValue = maxHealth;
-            healthBar.value = currentHealth;
-        }
         rb = GetComponent<Rigidbody2D>();
         enemyAI = GetComponent<EnemyAI>();
         anim = GetComponentInChildren<Animator>();
+        if (hudPrefab != null)
+        {
+            Canvas mainCanvas = Object.FindFirstObjectByType<Canvas>();
+            if (mainCanvas != null)
+            {
+                hudInstance = Instantiate(hudPrefab, Object.FindFirstObjectByType<Canvas>().transform);
+                hudInstance.SetEnemyIcon(enemyIcon);
+                if (hudInstance.healthBar != null)
+                    hudInstance.healthBar.value = currentHealth / maxHealth;
+                hudInstance.gameObject.SetActive(false);
+            }
+        }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 

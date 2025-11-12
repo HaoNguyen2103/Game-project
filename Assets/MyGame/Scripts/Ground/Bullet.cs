@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
     public GameObject fxPrefab;
     private float destroyTime = 3f;
     public int damavalue = 10;
-    
+    private bool hasHit = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
 
             if (damage != null)
             {
+                hasHit = true;
                 damage.TakeDamage(damavalue, Vector2.zero, gameObject);
                 Destroy(gameObject);
             }
