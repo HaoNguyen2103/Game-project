@@ -59,9 +59,13 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
         }
         if (hudInstance != null)
             Destroy(hudInstance.gameObject, 0.1f);
-
-        Destroy(gameObject, 2f);
-        
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.simulated = false;
+            Destroy(gameObject, 2f);
+        }
     }
     void Start()
     {
