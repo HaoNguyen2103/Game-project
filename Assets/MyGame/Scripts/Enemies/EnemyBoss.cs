@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyBoss : MonoBehaviour
 {
     [Header("Boss Settings")]
-    public EnemyHealthHUD hudPrefab;
+    public EnemyBossHealthHUD hudPrefab;
     public Sprite enemyBossIcon;
     public int damagePlayer = 5;
     public float attackRate = 1f;
@@ -11,8 +11,8 @@ public class EnemyBoss : MonoBehaviour
     private Rigidbody2D rb;
     private EnemyBossAI enemyBossAI;
     private Animator anim;
-    private EnemyHealthHUD hudInstance;
-    private static EnemyHealthHUD currentActiveHUD;
+    private EnemyBossHealthHUD hudInstance;
+    private static EnemyBossHealthHUD currentActiveHUD;
 
     private float nextAttackTime = 0f;
     private BossHealth bossHealth;
@@ -61,7 +61,7 @@ public class EnemyBoss : MonoBehaviour
         hudInstance.SetEnemyIcon(enemyBossIcon);
         if (hudInstance.healthBar != null)
             hudInstance.healthBar.value = hpPercent / 100f;
-
+        hudInstance.Show();
         currentActiveHUD = hudInstance;
 
     }
