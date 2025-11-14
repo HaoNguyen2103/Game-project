@@ -5,7 +5,7 @@ public class EnemyBossHealthHUD : MonoBehaviour
 {
     [Header("UI Components")]
     public Image enemyBossIcon;
-    public Slider healthBar;
+    [SerializeField] private Slider healthBar;
     public float showDuration = 5f;
 
     private Coroutine hideRoutine;
@@ -16,8 +16,14 @@ public class EnemyBossHealthHUD : MonoBehaviour
         {
             healthBar.maxValue = 1f;
             healthBar.value = 1f;
+            healthBar.interactable = false;
             gameObject.SetActive(false);
         }
+    }
+    public void SetHealth(float value)
+    {
+        if (healthBar != null)
+            healthBar.value = Mathf.Clamp01(value);
     }
 
     public void UpdateHealth(float currentHealth, float maxHealth)
@@ -55,7 +61,7 @@ public class EnemyBossHealthHUD : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void SetEnemyIcon(Sprite icon)
+    public void SetEnemyBossIcon(Sprite icon)
     {
         if (enemyBossIcon != null && icon != null)
             enemyBossIcon.sprite = icon;

@@ -6,7 +6,7 @@ public class EnemyHealthHUD : MonoBehaviour
 {
     [Header("UI Components")]
     public Image enemyIcon;
-    public Slider healthBar;
+    [SerializeField] private Slider healthBar;
     public float showDuration = 5f;
 
     private Coroutine hideRoutine;
@@ -17,6 +17,7 @@ public class EnemyHealthHUD : MonoBehaviour
         {
             healthBar.maxValue = 1f;
             healthBar.value = 1f;
+            healthBar.interactable = false;
             gameObject.SetActive(false);
         }
     }
@@ -35,6 +36,11 @@ public class EnemyHealthHUD : MonoBehaviour
             StopCoroutine(hideRoutine);
 
         hideRoutine = StartCoroutine(HideAfterDelay());
+    }
+    public void SetHealth(float value)
+    {
+        if (healthBar != null)
+            healthBar.value = Mathf.Clamp01(value);
     }
 
     public void Show()

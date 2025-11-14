@@ -285,11 +285,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   maxHealth: 100
   hudPrefab: {fileID: 5411653485063762895, guid: 09fd1b4d1b5a4b74aba3a4e28192395f, type: 3}
-  currentHealth: 0
-  nexAttackTime: 0
-  attackRate: 1
-  damagePlayer: 5
   enemyIcon: {fileID: -4772667731332526138, guid: fd6a6334e14b3f245a0e7ce0db1724d4, type: 3}
+  attackRange: 1.5
+  damagePlayer: 2
+  attackRate: 1
+  IsDead: 0
 --- !u!1 &7914236648592510898
 GameObject:
   m_ObjectHideFlags: 0

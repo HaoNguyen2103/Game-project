@@ -16,17 +16,25 @@ public class EnemyBossAI : MonoBehaviour
     private Transform target;
     private Rigidbody2D rb;
     private Animator anim;
+
     private int isIdleId;
     private int isWalkId;
+
     private bool isWaiting = false;
     public bool isAttacking = false;
     private bool isWalking = false;
-    private Enemy enemyScript;
+
+    private bool playerTouching = false;
+    private Transform player;
+
+    private float savedFacingX;   
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        enemyScript = GetComponent<Enemy>();
+
         isIdleId = Animator.StringToHash("isIdle");
         isWalkId = Animator.StringToHash("isWalking");
 
@@ -36,8 +44,20 @@ public class EnemyBossAI : MonoBehaviour
 
     void Update()
     {
-        if (!isWaiting && !isAttacking) //&& !enemyScript.isDead)
+        if (isWaiting || isAttacking)
+            return;
+
+        if (!playerTouching)
+        {
             Patrol();
+            FaceDirectionOfMovement();
+        }
+        else
+        {
+            
+            rb.linearVelocity = Vector2.zero;
+            FacePlayer();
+        }
     }
 
     private void Patrol()
@@ -46,20 +66,15 @@ public class EnemyBossAI : MonoBehaviour
 
         if (Vector2.Distance(transform.position, target.position) < minDistance)
         {
-            StartCoroutine(WaitAndTurn());
+            StartCoroutine(WaitAndSwitchPoint());
             return;
         }
 
         rb.linearVelocity = direction * speed;
-        if ((direction.x > 0 && transform.localScale.x < 0) ||
-            (direction.x < 0 && transform.localScale.x > 0))
-        {
-            Flip();
-        }
         anim.SetTrigger(isWalkId);
     }
 
-    private IEnumerator WaitAndTurn()
+    private IEnumerator WaitAndSwitchPoint()
     {
         isWaiting = true;
         StopWalking();
@@ -68,32 +83,69 @@ public class EnemyBossAI : MonoBehaviour
 
         yield return new WaitForSeconds(idleTime);
 
-        Flip();
         target = (target == PointA) ? PointB : PointA;
-        Vector3 scale = transform.localScale;
-
-
 
         StartWalking();
         isWaiting = false;
     }
-    public void TurnTowards(Vector3 newDirection)
+
+
+    private void FaceDirectionOfMovement()
     {
+        float vx = rb.linearVelocity.x;
 
-        rb.linearVelocity = Vector2.zero;
-
-
-        if ((newDirection.x > 0 && transform.localScale.x < 0) ||
-            (newDirection.x < 0 && transform.localScale.x > 0))
-        {
-            Flip();
-        }
-
-
-        Vector2 patrolDirection = (target.position - transform.position).normalized;
-        if (isWalking)
-            rb.linearVelocity = patrolDirection * speed;
+        if (vx > 0.05f)
+            SetFacing(1);
+        else if (vx < -0.05f)
+            SetFacing(-1);
     }
+
+    private void FacePlayer()
+    {
+        if (player == null) return;
+
+        float dir = player.position.x - transform.position.x;
+        SetFacing(dir >= 0 ? 1 : -1);
+    }
+
+    private void SetFacing(int direction)
+    {
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * direction;
+        transform.localScale = scale;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            playerTouching = true;
+            player = col.transform;
+
+            
+            savedFacingX = transform.localScale.x;
+
+            StopWalking();  
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            playerTouching = false;
+            player = null;
+
+            
+            Vector3 scale = transform.localScale;
+            scale.x = savedFacingX;
+            transform.localScale = scale;
+
+            StartWalking();
+        }
+    }
+
     public void StartWalking()
     {
         if (!isWalking)
@@ -113,11 +165,5 @@ public class EnemyBossAI : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             isWalking = false;
         }
-    }
-    private void Flip()
-    {
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
     }
 }
