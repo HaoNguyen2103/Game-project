@@ -51,7 +51,8 @@ public class EnemyBoss : MonoBehaviour
     private void UpdateHUD(float hpPercent)
     {
         if (hudInstance == null) return;
-
+        if (hpPercent <= 0f) return; 
+        if (hpPercent >= 100f) return;
         if (currentActiveHUD != null && currentActiveHUD != hudInstance)
             currentActiveHUD.HideImmediate();
 
