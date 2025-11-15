@@ -11,7 +11,7 @@ public class TrapManager : MonoBehaviour
             IcanTakeDamage playerTakeDamage = collision.GetComponent<IcanTakeDamage>();
             if (playerTakeDamage != null)
             {
-                Debug.Log("Player va vao bay, gay sat thuong: " + damage);
+                
                 playerTakeDamage.TakeDamage(damage, Vector2.zero, gameObject);
 
             }

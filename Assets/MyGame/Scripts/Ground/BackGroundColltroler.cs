@@ -20,7 +20,7 @@ public class BackGroundColltroler : MonoBehaviour
         startPos = target.position.x;
         foreach (var item in backGround)
         {
-            Debug.Log(item.name);
+            
         }
     }
 
