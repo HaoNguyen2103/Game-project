@@ -1,5 +1,12 @@
 using UnityEngine;
 
+[System.Serializable]
+public class DropItem
+{
+    public GameObject itemPrefab;
+    [Range(0, 100)]
+    public float dropChance;
+}
 public class Enemy : MonoBehaviour, IcanTakeDamage
 {
     [Header("Enemy Settings")]
@@ -21,6 +28,11 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
 
     private EnemyHealthHUD hudInstance;
     private static EnemyHealthHUD currentActiveHUD;
+
+    [Header("Drop Item")]
+    public DropItem[] dropItems;
+    public int maxDropCount = 3;
+    public Transform dropPoint;
 
     void Start()
     {
@@ -133,10 +145,33 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
             rb.angularVelocity = 0f;
             rb.simulated = false;
         }
-
+        for (int i = 0; i < maxDropCount; i++)
+        {
+            GameObject itemToDrop = GetRandomDrop();
+            if (itemToDrop != null)
+            {
+                Vector3 spawnPos = dropPoint.position + new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+                Instantiate(itemToDrop, spawnPos, Quaternion.identity);
+            }
+        }
         Destroy(gameObject, 2f);
     }
+    private GameObject GetRandomDrop()
+    {
+        float roll = Random.Range(0f, 100f);
+        float cumulative = 0f;
 
+        foreach (DropItem dropItem in dropItems)
+        {
+            cumulative += dropItem.dropChance;
+            if (roll <= cumulative)
+            {
+                return dropItem.itemPrefab;
+            }
+        }
+
+        return null;
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

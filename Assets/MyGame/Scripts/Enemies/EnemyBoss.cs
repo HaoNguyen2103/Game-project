@@ -1,5 +1,12 @@
 using UnityEngine;
 
+[System.Serializable]
+public class DropItemBoss
+{
+    public GameObject itemPrefab;
+    [Range(0, 100)]
+    public float dropChance;
+}
 public class EnemyBoss : MonoBehaviour
 {
     [Header("Boss Settings")]
@@ -18,6 +25,11 @@ public class EnemyBoss : MonoBehaviour
     private BossHealth bossHealth;
     private bool isDead = false;
     private bool hasFlippedToPlayer = false;
+
+    [Header("Drop Item")]
+    public DropItem[] dropItems;
+    public int maxDropCount = 15;
+    public Transform dropPoint;
 
     void Awake()
     {
@@ -125,10 +137,33 @@ public class EnemyBoss : MonoBehaviour
             rb.angularVelocity = 0f;
             rb.simulated = false;
         }
-
+        for (int i = 0; i < maxDropCount; i++)
+        {
+            GameObject itemToDrop = GetRandomDrop();
+            if (itemToDrop != null)
+            {
+                Vector3 spawnPos = dropPoint.position + new Vector3(Random.Range(-3f, 3f), 0, Random.Range(-3f, 3f));
+                Instantiate(itemToDrop, spawnPos, Quaternion.identity);
+            }
+        }
         Destroy(gameObject, 5f);
     }
+    private GameObject GetRandomDrop()
+    {
+        float roll = Random.Range(0f, 100f);
+        float cumulative = 0f;
 
+        foreach (DropItem dropItem in dropItems)
+        {
+            cumulative += dropItem.dropChance;
+            if (roll <= cumulative)
+            {
+                return dropItem.itemPrefab;
+            }
+        }
+
+        return null;
+    }
     private void OnDrawGizmosSelected()
     {
         Collider2D col = GetComponent<Collider2D>();
