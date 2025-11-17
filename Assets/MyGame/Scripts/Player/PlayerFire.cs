@@ -6,22 +6,30 @@ public class PlayerFire : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletsPosition;
     public float bulletSpeed = 20f;
+    public float energyCost = 10f;
+
     private PlayerController playerController;
+    private Player player;
     private float timeDestroy = 2f;
     public AudioClip shootClip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerController = GetComponent<PlayerController>();
+        player = GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
-        {
-            Shoot();
-            AudioManager.Instance.PlayEnemysfxmusic(shootClip);
+        { 
+            if (player != null && player.UseEnergy(energyCost))
+                
+            {
+                Shoot();
+                AudioManager.Instance.PlayEnemysfxmusic(shootClip);
+            }
         }
     }
     private void Shoot()

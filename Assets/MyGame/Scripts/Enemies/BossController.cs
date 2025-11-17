@@ -47,7 +47,7 @@ public class BossPhaseController : MonoBehaviour
         else if (!phase40Triggered && hpPercent <= 40f && hpPercent > 20f)
         {
             phase40Triggered = true;
-            TriggerBossSkill("Skill_40", 1.5f,10);
+            TriggerBossSkill("Skill_40", 1.5f,11);
         }
         else if (!phase20Triggered && hpPercent <= 20f && hpPercent > 5f)
         {
@@ -57,7 +57,7 @@ public class BossPhaseController : MonoBehaviour
         else if (!phase5Triggered && hpPercent <= 5f)
         {
             phase5Triggered = true;
-            TriggerBossSkill("Skill_5", 1.5f, 10);
+            TriggerBossSkill("Skill_5");
         }
     }
 

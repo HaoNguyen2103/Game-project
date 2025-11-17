@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
     public float attackRange = 1.5f;
     public int damagePlayer = 2;
     public float attackRate = 1f;
-
+    public float xpReward = 2f;
     [HideInInspector] public bool IsDead = false;
 
     private float nextAttackTime = 0f;
@@ -145,8 +145,13 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
             rb.angularVelocity = 0f;
             rb.simulated = false;
         }
-        int droppedCount = 0;
+        Player player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Player>();
+        if (player != null)
+        {
+            player.GainXP(xpReward);
+        }
 
+        int droppedCount = 0;
         foreach (DropItem dropItem in dropItems)
         {
             float roll = Random.Range(0f, 100f);
