@@ -13,22 +13,23 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isJumping = false;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private bool facingRight = true;
     private Animator anim;
 
     private int isWalkID;
     private int isJumpID;
+    public float dropVelocity = -5f;
+    public float dropDuration = 0.2f;
+    private Collider2D playerCol;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         isWalkID = Animator.StringToHash("isWalk");
         isJumpID = Animator.StringToHash("isJump");
+        playerCol = GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -46,8 +47,39 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             anim.SetBool("isJump", true);
         }
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            StartCoroutine(DropDown());
+        }
     }
+    IEnumerator DropDown()
+    {
 
+        Collider2D[] results = new Collider2D[10];
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.useTriggers = false;
+        int count = playerCol.Overlap(filter, results);
+
+        for (int i = 0; i < count; i++)
+        {
+            if (results[i] != null && results[i].GetComponent<PlatformEffector2D>() != null)
+            {
+                Physics2D.IgnoreCollision(playerCol, results[i], true);
+            }
+        }
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, dropVelocity);
+
+        yield return new WaitForSeconds(dropDuration);
+
+        for (int i = 0; i < count; i++)
+        {
+            if (results[i] != null && results[i].GetComponent<PlatformEffector2D>() != null)
+            {
+                Physics2D.IgnoreCollision(playerCol, results[i], false);
+            }
+        }
+    }
     void Jump()
     {
         

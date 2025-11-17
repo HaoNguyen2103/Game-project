@@ -37,42 +37,47 @@ public class BossPhaseController : MonoBehaviour
         if (!phase80Triggered && hpPercent <= 80f && hpPercent > 60f)
         {
             phase80Triggered = true;
-            TriggerBossSkill("Skill_80", 1.5f);
+            TriggerBossSkill("Skill_80", 1.5f,5);
         }
         else if (!phase60Triggered && hpPercent <= 60f && hpPercent > 40f)
         {
             phase60Triggered = true;
-            TriggerBossSkill("Skill_60", 1.5f);
+            TriggerBossSkill("Skill_60");
         }
         else if (!phase40Triggered && hpPercent <= 40f && hpPercent > 20f)
         {
             phase40Triggered = true;
-            TriggerBossSkill("Skill_40", 1.5f);
+            TriggerBossSkill("Skill_40", 1.5f,10);
         }
         else if (!phase20Triggered && hpPercent <= 20f && hpPercent > 5f)
         {
             phase20Triggered = true;
-            TriggerBossSkill("Skill_20", 1.5f);
+            TriggerBossSkill("Skill_20");
         }
         else if (!phase5Triggered && hpPercent <= 5f)
         {
             phase5Triggered = true;
-            TriggerBossSkill("Skill_5", 1.5f);
+            TriggerBossSkill("Skill_5", 1.5f, 10);
         }
     }
 
-    private void TriggerBossSkill(string skillTrigger, float summonDelay)
+    private void TriggerBossSkill(string skillTrigger, float summonDelay, int summonAmount)
     {
         if (anim != null)
             anim.SetTrigger(skillTrigger);
 
         if (summoner != null)
-            StartCoroutine(DelayedSummon(summonDelay));
+            StartCoroutine(DelayedSummon(delay: summonDelay, summonAmount: summonAmount));
+    }
+    private void TriggerBossSkill(string skillTrigger)
+    {
+        if (anim != null)
+            anim.SetTrigger(skillTrigger);
     }
 
-    private IEnumerator DelayedSummon(float delay)
+    private IEnumerator DelayedSummon(float delay, int summonAmount)
     {
         yield return new WaitForSeconds(delay);
-        summoner.SummonMinions();
+        summoner.SummonMinions(summonAmount);
     }
 }

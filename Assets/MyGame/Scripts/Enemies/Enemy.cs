@@ -145,33 +145,25 @@ public class Enemy : MonoBehaviour, IcanTakeDamage
             rb.angularVelocity = 0f;
             rb.simulated = false;
         }
-        for (int i = 0; i < maxDropCount; i++)
-        {
-            GameObject itemToDrop = GetRandomDrop();
-            if (itemToDrop != null)
-            {
-                Vector3 spawnPos = dropPoint.position + new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
-                Instantiate(itemToDrop, spawnPos, Quaternion.identity);
-            }
-        }
-        Destroy(gameObject, 2f);
-    }
-    private GameObject GetRandomDrop()
-    {
-        float roll = Random.Range(0f, 100f);
-        float cumulative = 0f;
+        int droppedCount = 0;
 
         foreach (DropItem dropItem in dropItems)
         {
-            cumulative += dropItem.dropChance;
-            if (roll <= cumulative)
+            float roll = Random.Range(0f, 100f);
+            if (roll <= dropItem.dropChance)
             {
-                return dropItem.itemPrefab;
+                Vector3 spawnPos = dropPoint.position + new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f));
+                Instantiate(dropItem.itemPrefab, spawnPos, Quaternion.identity);
+                droppedCount++;
+
+                if (droppedCount >= maxDropCount)
+                    break;
             }
         }
-
-        return null;
+    
+        Destroy(gameObject, 2f);
     }
+   
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
