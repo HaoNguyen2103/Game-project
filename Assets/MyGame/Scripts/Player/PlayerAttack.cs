@@ -14,7 +14,12 @@ public class PlayerAttack : MonoBehaviour
     public int damegeToGive = 10;
     private Animator anim;
     private int isAttackAnimationID;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [Header("Special Effect Settings")]
+    public GameObject specialAttackEffectPrefab; 
+    public Transform effectSpawnPoint; 
+    public int specialEventCharges = 0;
+    
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -53,6 +58,20 @@ public class PlayerAttack : MonoBehaviour
             enemiesToDamage[i].GetComponent<IcanTakeDamage>()?.TakeDamage(damegeToGive, pointAttack.position, gameObject);
         }
         yield return null;
+    }
+    public void OnAttackEvent()
+    {
+        if (specialEventCharges > 0 && specialAttackEffectPrefab != null && effectSpawnPoint != null)
+        {
+            specialEventCharges--;
+            
+            GameObject effect = Instantiate(specialAttackEffectPrefab, effectSpawnPoint.position, Quaternion.identity);
+            Destroy(effect, 1f); 
+        }
+    }
+    public void AddSpecialEventCharges(int amount)
+    {
+        specialEventCharges += amount;
     }
     private void OnDrawGizmos()
     {

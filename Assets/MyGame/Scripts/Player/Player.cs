@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IcanTakeDamage
 {
-    public int Maxhealth = 100;
+    public int Maxhealth = 300;
     private int currentHealth;
 
     public float maxEnergy = 100f;
@@ -117,5 +117,13 @@ public class Player : MonoBehaviour, IcanTakeDamage
         currentXP -= xpToLevelUp;
         level++;
         xpToLevelUp *= 1.2f;
+    }
+    public void Heal(int amount)
+    {
+        if (isDead) return;
+
+        currentHealth += amount;
+        if (currentHealth > Maxhealth)
+            currentHealth = Maxhealth;
     }
 }

@@ -3364,6 +3364,7 @@ GameObject:
   - component: {fileID: 192898674}
   - component: {fileID: 192898673}
   - component: {fileID: 192898672}
+  - component: {fileID: 192898675}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -3466,6 +3467,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305365580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192898675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192898671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb5a7caa2e1d2a43b4221f26c1e5860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  radius: 0.5
+  pointAttack: {fileID: 1055989156}
+  attackRange: 0.5
+  nextAttack: 0
+  timeDelay: 0.2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damegeToGive: 10
+  specialAttackEffectPrefab: {fileID: 7678397136293268274, guid: 51548da55e4122942919d8e296ee5fca, type: 3}
+  effectSpawnPoint: {fileID: 493128708}
+  specialEventCharges: 0
 --- !u!1001 &195128353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9687,6 +9712,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491321441}
   m_CullTransparentMesh: 1
+--- !u!1 &493128707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493128708}
+  m_Layer: 0
+  m_Name: PointAttackSpecial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493128708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493128707}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305365580}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500890999
 GameObject:
   m_ObjectHideFlags: 0
@@ -23402,7 +23458,6 @@ GameObject:
   - component: {fileID: 1305365579}
   - component: {fileID: 1305365581}
   - component: {fileID: 1305365582}
-  - component: {fileID: 1305365583}
   - component: {fileID: 1305365584}
   - component: {fileID: 1305365585}
   m_Layer: 0
@@ -23455,6 +23510,7 @@ Transform:
   - {fileID: 192898674}
   - {fileID: 801649596}
   - {fileID: 1055989156}
+  - {fileID: 493128708}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1305365581
@@ -23524,27 +23580,6 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   dropVelocity: -5
   dropDuration: 0.2
---- !u!114 &1305365583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305365578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb5a7caa2e1d2a43b4221f26c1e5860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0.5
-  pointAttack: {fileID: 1055989156}
-  attackRange: 0.5
-  nextAttack: 0
-  timeDelay: 0.2
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  damegeToGive: 10
 --- !u!114 &1305365584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23557,7 +23592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431eefe0c48ce4f4ca2bbf3647f3dd7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  Maxhealth: 100
+  Maxhealth: 300
   maxEnergy: 100
   energyRegenRate: 1
   level: 1
