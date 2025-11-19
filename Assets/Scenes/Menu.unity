@@ -412,8 +412,9 @@ GameObject:
   - component: {fileID: 86822659}
   - component: {fileID: 86822658}
   - component: {fileID: 86822657}
+  - component: {fileID: 86822660}
   m_Layer: 5
-  m_Name: Archery
+  m_Name: Wizar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +484,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 86822658}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 86822660}
+        m_TargetAssemblyTypeName: CheckPoint, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &86822658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,6 +535,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86822655}
   m_CullTransparentMesh: 1
+--- !u!114 &86822660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86822655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b5a29e2cdec5943b20f709eebef077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckPoint
+  characterID: 1
 --- !u!1 &136713083
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +710,7 @@ GameObject:
   - component: {fileID: 219773227}
   - component: {fileID: 219773226}
   - component: {fileID: 219773225}
+  - component: {fileID: 219773228}
   m_Layer: 5
   m_Name: Sword
   m_TagString: Untagged
@@ -756,16 +783,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 351604571}
-        m_TargetAssemblyTypeName: GameSceneLoad, Assembly-CSharp
-        m_MethodName: OnClickButtonOne
-        m_Mode: 5
+      - m_Target: {fileID: 219773228}
+        m_TargetAssemblyTypeName: CheckPoint, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LV1
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &219773226
@@ -806,6 +833,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219773223}
   m_CullTransparentMesh: 1
+--- !u!114 &219773228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219773223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b5a29e2cdec5943b20f709eebef077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckPoint
+  characterID: 0
 --- !u!1 &235279694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,6 +1415,55 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &434490384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434490386}
+  - component: {fileID: 434490385}
+  m_Layer: 0
+  m_Name: CharacterHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &434490385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434490384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a58a7bf449cda24ca6374a23cb2ddea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterHolder
+  Characters:
+  - {fileID: 2837767906139498309, guid: fad02c37b72554a4c80f511c674779ff, type: 3}
+  - {fileID: 783956194353368619, guid: 1077d4c92d553574db2b286cada173f2, type: 3}
+  - {fileID: 3483792644694689767, guid: 96e86de8747f91542b1f22ea380f9369, type: 3}
+  CharacterPicked: {fileID: 0}
+--- !u!4 &434490386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434490384}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.15772, y: 0.10982, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649092624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,8 +2462,9 @@ GameObject:
   - component: {fileID: 872351010}
   - component: {fileID: 872351009}
   - component: {fileID: 872351008}
+  - component: {fileID: 872351011}
   m_Layer: 5
-  m_Name: Punch
+  m_Name: Goku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2444,7 +2534,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 872351009}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 872351011}
+        m_TargetAssemblyTypeName: CheckPoint, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &872351009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2483,6 +2585,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872351006}
   m_CullTransparentMesh: 1
+--- !u!114 &872351011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872351006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b5a29e2cdec5943b20f709eebef077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckPoint
+  characterID: 2
 --- !u!1 &910026691
 GameObject:
   m_ObjectHideFlags: 0
@@ -5534,3 +5649,4 @@ SceneRoots:
   - {fileID: 1525319914}
   - {fileID: 351604572}
   - {fileID: 5705709242072687126}
+  - {fileID: 434490386}
