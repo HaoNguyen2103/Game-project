@@ -211,6 +211,7 @@ MonoBehaviour:
   attackRange: 1.5
   damagePlayer: 2
   attackRate: 1
+  xpReward: 2
   IsDead: 0
   dropItems:
   - itemPrefab: {fileID: 5678164593314014047, guid: cbcd957c262510542b90050b8c0111f2, type: 3}
@@ -220,6 +221,26 @@ MonoBehaviour:
   - itemPrefab: {fileID: 4812768367958324684, guid: 11cad7eb9f70f0145bf4133f4a708c63, type: 3}
     dropChance: 50
   - itemPrefab: {fileID: 4242899342954737300, guid: 734c4121730bf1548a5cc1f9a6442c3c, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 8865733613135266763, guid: 40399a854a19def459658c55eb8336a7, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 2046086542173678475, guid: 4e473e46bc2e816489d842951149c6e2, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 45130575232464731, guid: 701ac38856f725f489a3b8ddc32b31ec, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 8168278775744758948, guid: 7eb54901953d56042a107fb2fe935aad, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3130740705650526192, guid: cabfe6f38a92cc54291d909c06783e70, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3766979505806376254, guid: d067015236aa36e4a8ee641b46635417, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 376996506445004533, guid: b6dee66f94064614fbbb9134d676967b, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 9020968520775709939, guid: f7a382e5888774647a9e6050cf0b23ec, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 2018950812684768598, guid: 82cfd36cfd8d90042820f7306f226f35, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 2018950812684768598, guid: 82cfd36cfd8d90042820f7306f226f35, type: 3}
     dropChance: 20
   maxDropCount: 3
   dropPoint: {fileID: 905082806690150772}

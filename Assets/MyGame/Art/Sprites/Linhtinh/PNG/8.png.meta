@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 49
         y: 39
-        width: 398
-        height: 262
+        width: 397
+        height: 426
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: 8_1
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 201
-        width: 370
-        height: 264
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91e417ccd8c48cad0800000000000000
-      internalID: -2681809406195053031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 14e0c899de2abd244bf95288ddcb2fb2
     internalID: 0
     vertices: []
     indices: 
