@@ -16,7 +16,7 @@ public class EnemyAI : MonoBehaviour
     private Transform target;
     private Rigidbody2D rb;
     private Animator anim;
-    //private int isIdleId;
+
     private int isWalkId;
     private bool isWaiting = false;
     public bool isAttacking = false;
@@ -30,7 +30,6 @@ public class EnemyAI : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         enemyScript = GetComponent<Enemy>();
 
-       // isIdleId = Animator.StringToHash("isIdle");
         isWalkId = Animator.StringToHash("isWalking");
 
         target = PointA;
@@ -72,7 +71,6 @@ public class EnemyAI : MonoBehaviour
         isWaiting = true;
         StopWalking();
         rb.linearVelocity = Vector2.zero;
-       // anim.SetTrigger(isIdleId);
 
         yield return new WaitForSeconds(idleTime);
 
@@ -87,7 +85,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (!isWalking)
         {
-           // anim.ResetTrigger(isIdleId);
             anim.SetTrigger(isWalkId);
             isWalking = true;
         }
@@ -98,7 +95,6 @@ public class EnemyAI : MonoBehaviour
         if (isWalking)
         {
             anim.ResetTrigger(isWalkId);
-          //  anim.SetTrigger(isIdleId);
             rb.linearVelocity = Vector2.zero;
             isWalking = false;
         }

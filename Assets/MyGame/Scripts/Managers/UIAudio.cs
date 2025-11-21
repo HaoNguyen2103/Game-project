@@ -22,9 +22,5 @@ public class UIAudio : MonoBehaviour
         AudioManager.Instance.SetSfxVolume(volume / 100);
         DataManager.DataSfx = volume / 100;
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+   
 }

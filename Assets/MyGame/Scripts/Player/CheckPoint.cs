@@ -1,12 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class CheckPoint : MonoBehaviour
 {
-    public int characterID;
+    public GameObject characterPrefab;  
 
     public void OnSelect()
     {
-        CharacterHolder.Instance.SaveCharacter(characterID);
-        SceneManager.LoadScene("LV1"); 
+        
+        int id = characterPrefab.GetInstanceID();
+        CharacterHolder.Instance.SaveCharacter(id);
+
+        SceneManager.LoadScene("LV1");
     }
 }

@@ -60,9 +60,7 @@ public class AudioManager : MonoBehaviour
         musicSource.volume = volume;
         DataManager.DataMusic = volume;
     }
-    //public void SetPlayerVolume(float volume) {
-    //playerSource.volume = volume;
-    //}
+   
     public void SetSfxVolume(float volume)
     {
         sfxSource.volume = volume;

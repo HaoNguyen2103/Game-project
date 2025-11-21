@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 [AddComponentMenu("HaoNguyen/PlayerFire")]
 public class PlayerFire : MonoBehaviour
 {
@@ -27,10 +28,15 @@ public class PlayerFire : MonoBehaviour
             if (player != null && player.UseEnergy(energyCost))
                 
             {
-                Shoot();
+                StartCoroutine(DelayShoot());
                 AudioManager.Instance.PlayEnemysfxmusic(shootClip);
             }
         }
+    }
+        IEnumerator DelayShoot()
+    {
+        yield return new WaitForSeconds(0.5f); 
+        Shoot();
     }
     private void Shoot()
     {

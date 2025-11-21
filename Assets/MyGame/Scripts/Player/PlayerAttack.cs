@@ -14,6 +14,8 @@ public class PlayerAttack : MonoBehaviour
     public int damegeToGive = 10;
     private Animator anim;
     private int isAttackAnimationID;
+    private int isPowerAnimationID;
+    private int isAttackEAnimationID;
 
     [Header("Special Effect Settings")]
     public GameObject specialAttackEffectPrefab; 
@@ -24,10 +26,11 @@ public class PlayerAttack : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         isAttackAnimationID = Animator.StringToHash("isAttack");
+        isPowerAnimationID = Animator.StringToHash("isPower");
+        isAttackEAnimationID = Animator.StringToHash("isAttackE");
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -35,9 +38,30 @@ public class PlayerAttack : MonoBehaviour
             anim.SetTrigger(isAttackAnimationID);
             GetkeyR();
         }
-
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            anim.SetTrigger(isPowerAnimationID);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            anim.SetTrigger(isAttackEAnimationID);
+            GetkeyE();
+        }
     }
     private bool GetkeyR()
+    {
+        if (Time.time >= nextAttack)
+        {
+            nextAttack = Time.time + timeDelay;
+            StartCoroutine(Attack());
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    private bool GetkeyE()
     {
         if (Time.time >= nextAttack)
         {
