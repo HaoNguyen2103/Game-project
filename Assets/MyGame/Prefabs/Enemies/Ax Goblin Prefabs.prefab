@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e07996ca110653428a8287ec91da90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  maxHealth: 100
+  maxHealth: 50
   hudPrefab: {fileID: 5411653485063762895, guid: 09fd1b4d1b5a4b74aba3a4e28192395f, type: 3}
   enemyIcon: {fileID: -4772667731332526138, guid: 2b41ce6bd6c469b4c96d803e65e07652, type: 3}
   attackRange: 1.5

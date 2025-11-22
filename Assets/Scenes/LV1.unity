@@ -13530,6 +13530,24 @@ MonoBehaviour:
     dropChance: 50
   - itemPrefab: {fileID: 4242899342954737300, guid: 734c4121730bf1548a5cc1f9a6442c3c, type: 3}
     dropChance: 20
+  - itemPrefab: {fileID: 45130575232464731, guid: 701ac38856f725f489a3b8ddc32b31ec, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 8168278775744758948, guid: 7eb54901953d56042a107fb2fe935aad, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3130740705650526192, guid: cabfe6f38a92cc54291d909c06783e70, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3766979505806376254, guid: d067015236aa36e4a8ee641b46635417, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 376996506445004533, guid: b6dee66f94064614fbbb9134d676967b, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 9020968520775709939, guid: f7a382e5888774647a9e6050cf0b23ec, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3606359316351101333, guid: 6892e9d64b655bf42ab3d370ff8dc90f, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3606359316351101333, guid: 6892e9d64b655bf42ab3d370ff8dc90f, type: 3}
+    dropChance: 20
+  - itemPrefab: {fileID: 3606359316351101333, guid: 6892e9d64b655bf42ab3d370ff8dc90f, type: 3}
+    dropChance: 20
   maxDropCount: 15
   dropPoint: {fileID: 318453716}
 --- !u!114 &576977796
